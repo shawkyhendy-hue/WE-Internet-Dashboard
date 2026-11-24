@@ -1,0 +1,9 @@
+WE Dashboard v5.4 - Data Integrity Fix
+
+Fixes:
+- WE remaining_gb is now authoritative when returned by WE.
+- Remaining is calculated as Quota - Used only when WE does not supply Remaining.
+- This is important for lines with Top-Up / Add-ons where remaining can exceed Quota - Used.
+- Usage percentage returned by WE is preserved; local calculation is fallback only.
+- Quota, Used, Remaining, Usage, Renewal Cost and Outstanding values are rounded for display/storage consistency.
+- Shared Sync behavior from v5.3 is retained for both dashboards.
